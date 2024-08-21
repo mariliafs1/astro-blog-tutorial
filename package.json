@@ -2,7 +2,7 @@
   "name": "astro-blog-tutorial",
   "type": "module",
   "version": "0.0.1",
-  "browserslist":[
+  "browserslist": [
     "defaults"
   ],
   "scripts": {
@@ -14,12 +14,15 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.3",
+    "@astrojs/react": "^3.6.2",
     "astro": "^4.14.3",
+    "astro-icon": "^1.1.1",
     "postcss": "^8.4.41",
     "postcss-preset-env": "^10.0.2",
     "typescript": "^5.5.4"
   },
   "devDependencies": {
+    "@iconify-json/bxs": "^1.1.11",
     "sass-embedded": "^1.77.8"
   }
 }

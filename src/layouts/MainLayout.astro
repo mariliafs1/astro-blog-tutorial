@@ -1,5 +1,7 @@
 ---
 import MainHead from "./MainHead.astro";
+import Footer from '../components/Footer.astro'
+import Nav from '../components/Nav.astro'
 
 import "../styles/global.css"
 
@@ -12,6 +14,9 @@ const {
 <html lang="en">
   <MainHead {title} {description} />
   <body>
+	<Nav />
     <slot>Default text</slot>
-  </body>
+	<Footer />
+</body>
+
 </html>
