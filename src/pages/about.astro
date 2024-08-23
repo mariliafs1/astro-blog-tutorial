@@ -1,10 +1,33 @@
 ---
 // import de componente
 import MainLayout from "../layouts/MainLayout.astro";
-
-
+import Link from "../components/Link.astro";
 ---
 
-<MainLayout  title='About' description="My about page">
-	<p>hi from about</p>
+<MainLayout title="About" description="My about page">
+  <section class="container about" aria-label="About Me">
+    <img
+      src="/images/headshot.jpg"
+      alt="My headshot"
+      width="200"
+      height="300"
+    />
+
+    <div class="content">
+      <h1 class="h1">My Blog</h1>
+      <p>
+        Aenean sit amet convallis mauris. Integer eu ex id neque ultricies
+        auctor at non dui. Donec sollicitudin ullamcorper dolor. Donec blandit
+        semper massa vel facilisis. Interdum et malesuada fames ac ante ipsum
+        primis in faucibus. Nulla malesuada egestas dui porta sollicitudin.
+        Nullam ut lectus iaculis, placerat tortor sit amet, efficitur urna.
+        Donec a elit a metus feugiat mattis.
+      </p>
+      <Link
+        href="mailto:chris@codingipublic.dev"
+        style="primary"
+        text="Contact Me"
+      />
+    </div>
+  </section>
 </MainLayout>
